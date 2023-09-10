@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorohedoro</title>
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="/Landing-Page-version-1/img/smaller.png" type="image/x-icon">
+    <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link href="/Landing-Page-version-1/dist/output.css" rel="stylesheet" />
+    <link href="/Landing-Page-version-1/src/input.css" rel="stylesheet" />
+</head>
+<body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header class="bg-blackColor fixed top-0 left-0 w-full z-50">
+        <nav class="container relative h-14 flex justify-between items-center">
+            <div>
+              <a href="/Landing-Page-version-1/index.html" class="text-2x1 uppercase">
+                <img class="w-2/4 h-auto" src="/Landing-Page-version-1/src/img/Akira.png" alt="Akira icon">
+                </a>
+            </div>
+            
+            <div class="hidden absolute top-0 left-0 w-full py-14 bg-nedded rounded-lg 
+            border-b border-secondaryColor md:block md:static md:bg-black md:py-0 md:border-none 
+            md:w-auto md:ml-auto" id="nav-menu">
+                <ul class="flex flex-col text-center gap-5 md:flex-row">
+                    <li>
+                        <a href="#home" class="nav__link text-blackColor md:text-white hover:text-secondaryColor hover:font-semibold ease-in duration-200">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav__link text-blackColor md:text-white hover:text-secondaryColor hover:font-semibold ease-in duration-200">AboutUs</a>
+                    </li>
+                    <li>
+                        <a href="#menu" class="nav__link text-blackColor md:text-white hover:text-secondaryColor hover:font-semibold ease-in duration-200">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#review" class="nav__link text-blackColor md:text-white hover:text-secondaryColor hover:font-semibold ease-in duration-200">Review</a>
+                    </li>
+                        <a href="#contact" class="nav__link text-blackColor md:text-white hover:text-secondaryColor hover:font-semibold ease-in duration-200">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="absolute top-[0.7rem] right-4 text-2x1 cursor-pointer
+                text-blackColor md:hidden" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-5">
+                <i class="ri-moon-line cursor-pointer ml-4 text-xl"></i>
+                
+                <div class="md:hidden" id="hamburger">
+                    <i class="ri-menu-2-line cursor-pointer text-xl"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--~~~~~~~~~~~~~~~ Compras ~~~~~~~~~~~~~~~-->
+     <section class="text-blackColor min-h-screen flex justify-center items-center">
+        <div class="flex-container1" style="display: flex; align-items: center;">
+          <div class="image-container1">
+            <div id="una_imagen">
+                <img class="h-[475px] rounded-2xl" src="/Landing-Page-version-1/src/img/anime/pelead.jpg" alt="pelea">
+            </div>
+            <div class="flex items-center my-5">
+              <img class="h-[5rem] mr-2 rounded-2xl" src="/Landing-Page-version-1/src/img/anime/pelead_2.jpeg" alt="pelea">
+              <img class="h-[5rem] mx-2 rounded-2xl" src="/Landing-Page-version-1/src/img/anime/pelead_2.jpeg" alt="pelea">
+              <img class="h-[5rem] mx-2 rounded-2xl" src="/Landing-Page-version-1/src/img/anime/pelead_2.jpeg" alt="pelea">
+              <img class="h-[5rem] mx-2 rounded-2xl" src="/Landing-Page-version-1/src/img/anime/pelead_2.jpeg" alt="pelea">
+              <img class="h-[5rem] mx-2 rounded-2xl" src="/Landing-Page-version-1/src/img/anime/pelead_2.jpeg" alt="pelea">
+            </div>
+          </div>
+          <div style="margin-left: 20px; display: flex; flex-direction: column; justify-content: flex-start; margin-top: -30px;">
+            <h3 class="font-medium text-2xl">Dorohedoro</h3>
+            <h2 id="text-title" class="font-semibold my-2 text-3xl">Matsumura</h2>
+            <p id="text-price" class="font-bold text-gray-600 text-3xl">S/. 1000.00</p>
+            <p class="font-medium my-4">Cantidad</p>
+            <div class="mb-2">
+              <i class="fa-solid fa-minus mr-2"></i>
+              <p class="font-medium inline-block mx-2">1</p>
+              <i class="fa-solid fa-plus ml-2"></i>
+            </div>
+            <p class="text-gray-500 font-normal my-2">20 items disponibles</p>
+            <p class="text-secondaryColor font-normal mb-2">Solo puede comprar un máximo de 6 items</p>
+            <div class="my-6 flex items-start justify-start">
+              <div>
+                <button class="bg-secondaryColor rounded-full text-whiteColor font-semibold w-32 py-2 text-lg">Comprar</button>
+              </div>
+              <div class="ml-2">
+                <button class="bg-whiteColor border-2 border-secondaryColor text-secondaryColor font-semibold rounded-full w-30 py-2 px-2 text-lg">Añadir a la Cesta</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

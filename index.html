@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="https://github.com/GabbrM/Landing-Page-version-1/blob/main/src/img/smaller.png" type="image/x-icon">
+    <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link href="/Landing-Page-version-1/dist/output.css" rel="stylesheet" />
+    <link href="/Landing-Page-version-1/src/input.css" rel="stylesheet" />
+    <title>Akira</title>
+  </head>
+  <body>
+    <!--~~~~~~~~~~~~~~~ Heamucder ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+<header class="bg-blackColor fixed top-0 left-0 w-full z-50">
+  <nav class="nav-home">
+    <!--Menu Hamburguesa-->
+    <div >
+      <button id="abrir" class="menu_button">
+        <i class="fa fa-bars cursor-pointer text-xl"></i>
+      </button>
+      <nav class="nav_menu" id="nav">
+        <button class="cerrar-menu" id="cerrar">
+          <i class="fa fa-bars cursor-pointer text-xl"></i>
+        </button>
+        <nav class="nav">
+          <li class="li"><h2>Categorías:</h2></li>
+          <li class="li"><a href="#" class="a">K-POP</a></li>
+          <li class="li"><a href="#" class="a">ANIME</a></li>
+          <li class="li"><a href="#" class="a">LECTURA</a></li>
+          <li class="li"><a href="#" class="a">NEW INGRESOS</a></li>
+          <li class="li"><a href="#" class="a">LO MÁS TOP</a></li>
+          <br>
+          <br>
+          <li class="li"><a href="#" class="a">Preguntas Frecuentes</a></li>
+          <li class="li"><a href="#" class="a">Contáctanos</a></li>
+        </nav>
+      </nav>
+    </div>
+    <!--Logo Akira-->
+    <div>
+      <a href="#" class="text-2x10 uppercase">
+        <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Akira.png" alt="Akira icon">
+      </a>
+    </div>
+    <!--~~~~~~~~~~~~~~~ Barra de Busqueda ~~~~~~~~~~~~~~~-->
+    <div class="search-bar flex items-center ml-auto">
+      <i class="bx bx-search"></i>
+      <input type="text" id="search-input" placeholder="Search..." />
+    </div>
+    <!--~~~~~~~~~~~~~~~ modo Oscuro ~~~~~~~~~~~~~~~-->
+    <div>
+      <i class="fa-regular fa-moon cursor-pointer ml-4 text-xl"></i>
+    </div>
+    <!--~~~~~~~~~~~~~~~ Carrito de Compra ~~~~~~~~~~~~~~~-->
+    <div>
+      <i class="fa fa-cart-shopping cursor-pointer ml-4 text-xl"></i>
+    </div>
+    <!--~~~~~~~~~~~~~~~ Cuenta ~~~~~~~~~~~~~~~-->
+    <div>
+      <i class="fa fa-user-circle cursor-pointer ml-4 text-xl"></i>
+    </div>
+    <!--~~~~~~~~~~~~~~~ Lista ~~~~~~~~~~~~~~~-->
+
+
+  </nav>
+
+</header>
+    <main>
+    
+<!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+  <section id="hero-section">
+      <div class="hero h-70" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/anime/kaiba.jpeg');">
+          <div class="hero-text absolute bottom-20 left-10 p-5">
+              <p class="text-lg">Nuevos Ingresos</p>
+              <h1 class="text-4xl font-bold my-2">Kaiba Seto</h1>
+              <p class="text-lg">Yu-Gi-Oh</p>
+              <a href="#" class="bg-blackColor hover:bg-secondaryColor text-white py-2 px-4 rounded-full inline-block mt-4 transition duration-300 ease-in-out border-white border-4">Comprar</a>
+          </div>
+      </div>
+  </section>   
+  <!--~~~~~~~~~~~~~~~ Category pero de ultimas figuras ~~~~~~~~~~~~~~~-->
+  <section id="latest" class="flex flex-col items-center justify-center text-center pt-8 pb-8">
+      <div class="text-blackColor pb-[3rem] pt-[3rem]">
+          <h2 class="font-bold text-4xl">ÚLTIMAS FIGURAS LLEGADAS AL SITIO WEB</h2>
+          <p class="font-bold text-lg">¡Colecciónalas todas y muéstrale a tus amigos!</p>
+      </div>
+      <div id="container-anime">
+        <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Figura-xiaoXieEr.html">
+            <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/anime/xie.jpg" class="w-64 h-[329px] object-cover" alt="imagen_xie">
+            <div class="poptext">
+              <p>Xiao Xun Er</p>
+              <p style="font-weight: normal">Escala 1/4</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Figura-Stein.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/anime/chica2.jpeg" class="w-64 h-[329px] object-cover" alt="imagen_chica">
+            <div class="poptext">
+              <p>Makise Kurisu</p>
+              <p style="font-weight: normal">Escala 1/7</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Figura-Hunter.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/anime/hunter.jpg" class="w-64 h-[329px] object-cover" alt="imagen_hunter">
+            <div class="poptext">
+              <p>HxH: Hisoka</p>
+              <p style="font-weight: normal">Escala 1/7</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Figura-TG.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/anime/pelea.jpg" class="w-64 h-[329px] object-cover" alt="imagen_pelea">
+            <div class="poptext">
+              <p>Kaneki vs Wall Tiger</p>
+              <p style="font-weight: normal">Escala 1/6</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Figura-Dorohedoro.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/anime/pelead.jpg" class="w-64 h-[329px] object-cover" alt="imagen_peleas">
+            <div class="poptext">
+              <p>Caiman & Nikaido</p>
+              <p style="font-weight: normal">Escala 1/6</p>
+            </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Figura-Asuka.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/anime/chibi.jpg" class="w-64 h-[329px] object-cover" alt="imagen_chibi">
+            <div class="poptext">
+              <p>Azuka Piloto</p>
+              <p style="font-weight: normal">Escala 1/12</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Figura-LieInApril.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/anime/chica.jpg" class="w-64 h-[329px] object-cover" alt="imagen_chica">
+            <div class="poptext">
+              <p>Kaori Miyazono</p>
+              <p style="font-weight: normal">Escala 1/4</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Figura-ChainsawMan.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/anime/chain.jpg" class="w-64 h-[329px] object-cover" alt="imagen_chainsawman">
+            <div class="poptext">
+              <p>Chainsaw man: Aki</p>
+              <p style="font-weight: normal">Escala 1/7</p>
+            </div>
+            </a>
+          </div>
+      </div>
+  </section>
+
+  <!--~~~~~~~~~~~~~~~ Category pero de kpop ~~~~~~~~~~~~~~~-->
+  <section id="kpop" class="flex-col items-center justify-center text-center pt-20 pb-20 mx-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+      <div class="text-blackColor pb-[3rem] pt-[3rem]">
+          <h2 class="font-bold text-4xl">ÚLTIMOS LANZAMIENTOS DE MÚSICA ASIÁTICA</h2>
+          <p class="font-bold text-lg">¡Para todos los audiofilos que llevaban esperando con ansias!</p>
+      </div>
+      <div id="container-kpop">
+          
+        <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Kpop-Younite.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Kpop/younite.jpg" class="w-64 h-[329px] object-cover" alt="Imagen de Younite">
+              <div class="poptext">
+                <p>YOUNITE</p>
+                <p style="font-weight: normal">YOUNI-ON</p>
+              </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Kpop-NewJeans.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Kpop/NewJeans.jpg" class="w-64 h-[329px]  object-cover"  alt="Imagen de NewJeans">
+              <div class="poptext">
+                <p>NewJeans 1ST</p>
+                <p style="font-weight: normal">NewJeans</p>
+              </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Kpop-BTS.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Kpop/bts.jpg" class="w-64 h-[329px]  object-cover"  alt="Imagen de BTS">
+              <div class="poptext">
+                <p>PROOF</p>
+                <p style="font-weight: normal">BTS</p>
+              </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Kpop-BTSbutter.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Kpop/butter.jpg" class="w-64 h-[329px]  object-cover"  alt="Imagen de BTS-Butter">
+              <div class="poptext">
+                <p>Butter</p>
+                <p style="font-weight: normal">BTS</p>
+              </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Kpop-Taeyong.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Kpop/taeyong.jpg" class="w-64 h-[329px]  object-cover"  alt="Imagen de taeyong">
+              <div class="poptext">
+                <p>Shalala</p>
+                <p style="font-weight: normal">TAEYONG</p>
+              </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Kpop-Queendom.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Kpop/red-velvet-queendom-6th-mini-album.jpg" class="w-64 h-[329px]  object-cover"  alt="Imagen de Queendom">
+              <div class="poptext">
+                <p>Queendom</p>
+                <p style="font-weight: normal">Red Velvet</p>
+              </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Kpop-Redmare.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Kpop/redmare.jpg" class="w-64 h-[329px]  object-cover"  alt="Imagen de REDMARE">
+              <div class="poptext">
+                <p>REDMARE</p>
+                <p style="font-weight: normal">Red Velvet</p>
+              </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Kpop-Serafim.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Kpop/fearless.jpg" class="w-64 h-[329px]  object-cover"  alt="Imagen de Sserafim">
+              <div class="poptext">
+                <p>Fearless</p>
+                <p style="font-weight: normal">LE SSERAFIM</p>
+              </div>
+            </a>
+          </div>
+      </div>
+  </section>
+  <!--~~~~~~~~~~~~~~~ Category pero de lectura ~~~~~~~~~~~~~~~-->
+  <section id="latest" class="flex flex-col items-center text-center py-12">
+      <div class="text-blackColor pb-[3rem] pt-[3rem]">
+          <h2 class="font-bold text-4xl">RECIÉN LLEGADOS A LA SECCIÓN DE LECTURA</h2>
+          <p class="font-bold text-lg">¡Nuevos estrenos para nuestros comelibros favoritos!</p>
+      </div>
+      <div id="img-container">
+        <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Lectura-Cannibal.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Lectura/cannibal.jpg" class="w-[250px] h-[300px]" alt="cannibal">
+              <div class="poptext">
+                <p>Cannibal</p>
+                <p style="font-weight: normal">Tomo 8</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Lectura-Jujutsu.html">
+            <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Lectura/jujutsu.jpg" class="w-[250px] h-[300px]" alt="jujutsu">
+            <div class="poptext">
+              <p>Jujutsu Kaisen</p>
+              <p style="font-weight: normal">Tomo 21</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Lectura-WarIsLove.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Lectura/kaguya.jpg" class="w-[250px] h-[300px]" alt="kaguya">
+              <div class="poptext">
+                <p>Kaguya-sama</p>
+                <p style="font-weight: normal">Tomo 25</p>
+              </div>
+            </a>
+          </div>
+
+        <div class="image-container">
+          <a href="/Landing-Page-version-1/src/paginas_compras/Lectura-BlueLock.html">
+            <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Lectura/bluelock.jpg" class="w-[250px] h-[300px]" alt="bluelock">
+            <div class="poptext">
+              <p>Bluelock</p>
+              <p style="font-weight: normal">Tomo 15</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="image-container">
+          <a href="/Landing-Page-version-1/src/paginas_compras/Lectura-Zombie.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Lectura/zombie.jpg" class="w-[250px] h-[300px]" alt="zombie">
+              <div class="poptext">
+                <p>Zom100</p>
+                <p style="font-weight: normal">Tomo 13</p>
+              </div>
+          </a>
+        </div>
+
+        <div class="image-container">
+          <a href="/Landing-Page-version-1/src/paginas_compras/Lectura-JunjiIto.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Lectura/junji.jpg" class="w-[250px] h-[300px]" alt="black Paradox">
+              <div class="poptext">
+                <p>Black Paradox</p>
+                <p style="font-weight: normal">Tomo 1</p>
+              </div>
+          </a>
+        </div>
+
+        <div class="image-container">
+            <a href="/Landing-Page-version-1/src/paginas_compras/Lectura-Haikyu.html">
+              <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Lectura/haikyu.jpg" class="w-[250px] h-[300px]" alt="haikyu">
+              <div class="poptext">
+                <p>Haikyuu</p>
+                <p style="font-weight: normal">Tomo 22</p>
+              </div>
+            </a>
+        </div>
+        <div class="image-container">
+          <a href="/Landing-Page-version-1/src/paginas_compras/Lectura-3x3Eyes.html">
+            <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Lectura/eyes.jpg" class="w-[250px] h-[300px]" alt="3x3 eyes">
+            <div class="poptext">
+              <p>3x3 Eyes</p>
+              <p style="font-weight: normal">Tomo 21</p>
+            </div>
+          </a>
+        </div>
+        <div class="image-container">
+          <a href="/Landing-Page-version-1/src/paginas_compras/Lectura-Ippo.html">
+            <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Lectura/ippo.jpg" class="w-[250px] h-[300px]" alt="ippo">
+            <div class="poptext">
+              <p>Hajime no Ippo</p>
+              <p style="font-weight: normal">Tomo 8</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="image-container">
+          <a href="/Landing-Page-version-1/src/paginas_compras/Lectura-Tomie.html">
+            <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Lectura/tomie.jpg" class="w-[250px] h-[300px]" alt="tomie">
+            <div class="poptext">
+              <p>TOMIE</p>
+              <p style="font-weight: normal">Tomo 1</p>
+            </div>
+          </a>
+        </div>
+      </div>
+  </section>
+  <!--~~~~~~~~~~~~~~~ Distribuidores ~~~~~~~~~~~~~~~-->
+  <section id="distribuidores" class="flex flex-col items-center text-center mt-80 mb-80">
+      <div id="container-distribuidores">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/Good-Smile-Company.jpg" alt="Good Smile Company logo" class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/figurama.png" alt="Good Smile Company logo" class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/alter.png"  alt="Good Smile Company logo"class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/megahouse.png" alt="Good Smile Company logo" class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/meccha.jpg" alt="Good Smile Company logo" class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/aniplex.png" alt="Good Smile Company logo" class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/kotobukiya.png" alt="Good Smile Company logo" class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/musicPlaza.jpg" alt="Good Smile Company logo" class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/kpopmart.jpg" alt="Good Smile Company logo" class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/sm.jpg" alt="Good Smile Company logo" class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/kpoptown.jpg" alt="Good Smile Company logo" class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/ktown4u.jpg" alt="Good Smile Company logo" class="w-[150px] h-[50px]">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/mymusictaste.png" alt="Good Smile Company logo" class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/Mandarake_logo.png" alt="Good Smile Company logo" class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/ebook.png" alt="Good Smile Company logo" class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/honto.png" alt="Good Smile Company logo" class="w-[150px] h-[50px]">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/alianza_3.jpg" alt="Good Smile Company logo" class="w-[150px] h-auto">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/alianza.png" alt="Good Smile Company logo" class="w-[150px] h-auto">
+
+      </div>
+      <div id="dos-distribuidores" class="gap-[2rem] items-center justify-center ">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/alianza_2.png" alt="Good Smile Company logo" class="w-[150px] h-auto py-[3rem]">
+          <img src="/Landing-Page-version-1/src/img/Alianzas/bts_shop.jpg" alt="Good Smile Company logo" class="w-[150px] h-[50px]">
+      </div>
+      
+  </section>
+
+  </main>
+  <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+  <footer>
+      <div id="footer-container" class="p-10 text-whiteColor">
+          <div class="max-w-7xl mx-auto">
+              <div id="contenido" class="grid grid-cols-l md:grid-cols-4 lg:grid-cols-2 gap-2">
+                  <div>
+                      <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/smaller.png" alt="logo_cara">
+                  </div>
+                  <div class="mb-5">
+                      <h4 class="text2xl text-whiteColor pb-4 font-medium"><strong>Información</strong></h4>
+                      <ul class="text-whiteColor font-normal">
+                          <li class="pb-4"><a href="/Landing-Page-version-1/src/login.html" class="hover:text-secondaryColor">Mi cuenta </a></li>
+                          <li class="pb-4"><a href="#" class="hover:text-secondaryColor">Info de Compra</a></li>
+                          <li class="pb-4"><a href="#" class="hover:text-secondaryColor">Políticas</a></li>
+                      </ul>
+                  </div>
+                  <div class="mb-5">
+                      <h4 class="pb-4 font-medium"><strong>Menú Principal</strong></h4>
+                      <ul class="text-whiteColor font-normal">
+                          <li class="pb-4"><a href="/Landing-Page-version-1/index.html" class="hover:text-secondaryColor">Inicio</a></li>
+                          <li class="pb-4"><a href="#" class="hover:text-secondaryColor">Tienda</a></li>
+                          <li class="pb-4"><a href="/Landing-Page-version-1/src/contactanos.html" class="hover:text-secondaryColor">Contáctanos</a></li>
+                      </ul>
+                  </div>
+                  <div class="mb-5">
+                      <div>
+                          <h4 class="pb-4 font-medium"><strong>Síguenos</strong></h4>
+                          <ul class="text-whiteColor font-normal">
+                              <li class="pb-4">
+                                  <a href="#" class="w-4 h-4 inline-block">
+                                      <i class="fa-brands fa-tiktok"></i>
+                                  </a>
+                                  <a id="sin_iconos" href="#" class="hover:text-secondaryColor ml-2">Tiktok</a>
+                              </li>
+                              <li class="pb-4">
+                                  <a href="#" class="w-4 h-4 inline-block">
+                                      <i class="fa-brands fa-instagram"></i>
+                                  </a>
+                                  <a href="#" id="sin_iconos" class="hover:text-secondaryColor ml-2">Instagram</a>
+                              </li>
+                              <li class="pb-4">
+                                  <a href="#" class="w-4 h-4 inline-block">
+                                      <i class="fa-brands fa-facebook-f"></i>
+                                  </a>
+                                  <a href="#" id="sin_iconos" class="hover:text-secondaryColor ml-2">Facebook</a>
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div>
+          <div id="footer-container" class="w-full text-whiteColor px-1">
+              <div class="max-w-7xl flex flex-col sm:flex-row py-4 mx-auto justify-starts items-start">
+                  <div class="">
+                      <div id="copyright" class="ml-20">
+                          © 2023 AKIRA, Powered by Lambders
+                      </div>
+                      
+                  </div>
+                  <div id="metodos" class="text-end text-xl text-white mb-2 md:hidden">
+                      <a href="#" class="mr-20 w-[60%] mx-1 inline-block pt-2">
+                          <img src="https://raw.githubusercontent.com/GabbrM/Landing-Page-version-1/main/src/img/Extras/metodosPago.png" alt="metodo de pago">
+                      </a>
+                  </div>                    
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
+    <script src="/Landing-Page-version-1/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+    body{
+        @apply text-whiteColor bg-slate-200 tracking-wider font-montserrat font-light;
+    }
+}
+
+/*------------ Hero section -------------*/
+.hero {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/src/img/anime/kaiba.jpeg');
+    height: 70vh;
+    background-size:cover;
+    background-position: center top;
+    color: #fff; /* Color del texto */
+    text-align: left;
+    padding: 100px 20px; /* Espaciado interior */
+}
+
+/* Estilos para hacerlo responsive */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    .hero-text {
+        text-align:start;
+        left: 50%;
+        transform: translateX(-60%);
+    }
+}
+
+/*------------ Ultimos productos lanzados -------------*/
+
+#latest {
+    display: flex;
+    flex-direction: column; /* Alinea elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#img-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 columnas en cada fila */
+    gap: 2rem; /* Espacio entre las imágenes */
+}
+
+#img-container img {
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+@media (max-width: 768px) {
+    #img-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/*------------ Contenedor kpop -------------*/
+
+#kpop {
+    display: flex;
+    flex-direction: column; /* Alinea elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#container-kpop {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas en cada fila */
+    gap: 2rem; /* Espacio entre las imágenes */
+}
+
+#container-kpop img {
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+@media (max-width: 768px) {
+    #container-kpop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #container-kpop {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/*------------ Contenedor anime figuras -------------*/
+
+#container-anime {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+#container-anime img {
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    
+}
+
+@media (max-width: 768px) {
+    #container-anime {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #container-anime {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 260px;
+    height: 329px;
+    transition: filter 0.3s;
+}
+
+.poptext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 75% 38% 20% 5%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+.image-container:hover img {
+    filter: brightness(0.7);
+}
+
+.image-container:hover .poptext {
+    opacity: 1;
+}
+
+
+/*------------ Distribuidores -------------*/
+#distribuidores {
+    display: flex;
+    flex-direction: column; /* Alinea elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#container-distribuidores {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 4 columnas en cada fila */
+    justify-items: center;
+    align-items: center;
+    gap: 2rem; /* Espacio entre las imágenes */
+}
+
+#container-distribuidores img {
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+
+@media (max-width: 768px) {
+    #container-distribuidores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 480px) {
+    #container-distribuidores {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+/*------------ Distribuidores centro -------------*/
+
+#dos-distribuidores {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#dos-distribuidores {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 2rem; /* Espacio entre las imágenes */
+}
+
+#dos-distribuidores img {
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+
+@media (max-width: 768px) {
+    #dos-distribuidores {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    #dos-distribuidores {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+/*------------ Compra estatica -------------*/
+
+@media (max-width: 1000px) {
+    /* Aplicar estilos solo en pantallas más pequeñas que 768px de ancho */
+    .flex-container1 {
+        flex-direction: column; /* Cambiar a una disposición en columna */
+        align-items: center; /* Centrar horizontalmente */
+      }
+    
+      /* Agregar margen al contenedor #una_imagen */
+      #una_imagen {
+          margin: 20px; /* Margen exterior */
+      }
+  
+      /* Agregar padding al contenedor interno de la imagen */
+      #una_imagen img {
+          max-width: 100%;
+          height: auto;
+          padding: 20px; /* Padding interior */
+          border-radius: 10%;
+      }
+  
+      .image-container1 .flex {
+          display: none;
+      }
+
+      .image-container1 img{
+        width: 60rem;
+      }
+
+      #text-title, #text-price{
+          font-size: 1.5rem;
+      }
+}
+
+/*------------ Footer -------------*/
+#footer-container{
+    background-color: #141414;
+  }
+ 
+/* Estilo predeterminado para pantallas más grandes que md */
+#metodos {
+    display: block;
+}
+
+/* Media query para pantallas más pequeñas que md */
+@media (max-width: 768px) {
+    #metodos {
+        display: none;
+    }
+    #copyright {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: inline-block; /* Asegura que el div ocupe solo el ancho necesario */
+
+    }
+    #copyright .text-start {
+        text-align: center;
+      }
+    
+    #contenido{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #sin_iconos{
+        display: none;
+    }
+}
+
+.nav-home {
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    height: 4rem; /* Aproximadamente 14px por unidad de altura */
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-home img{
+
+    width: 50%;
+    height: auto;
+    min-height: 30%;
+    max-height: 20rem;
+}
+
+
+        /* Barra de busqueda */
+        .search-bar {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .search-bar {
+                display: none;
+            }
+        }
+
+        .search-bar i {
+            margin-right: 5px;
+            color: #000;
+        }
+
+.
+.menu_button{
+    padding: 20px;
+}
+
+.cerrar-menu{
+    align-items: center;
+    display: block;
+    padding-right: 90%;
+}
+
+.nav_menu{
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: aliceblue;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0, .3);
+
+}
+.nav_menu.visible {
+    opacity: 1;
+    visibility: visible;
+    padding: 2rem;
+
+    position: fixed;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    width: 20%;
+    height: 50%;
+
+}
+@media (max-width: 1100px) {
+    .nav_menu.visible{
+        font-size: small;
+        width: 30%;
+        height: 45%;
+    }
+}
+.nav{
+    flex-direction: column;
+    align-items: end;
+}
